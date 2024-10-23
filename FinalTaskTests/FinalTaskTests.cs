@@ -18,11 +18,11 @@ namespace FinalTask.Tests
     public class FinalTaskTests
     {
         public IWebDriver driver;
-        string usernameLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/div[1]/input";
-        string passwordLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/div[2]/input";
-        string loginButtonLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/input";
-        string errorCardLocator = "/html/body/div/div/div[2]/div[1]/div/div/form/div[3]/h3";
-        string dashboardNameLocator = "/html/body/div/div/div/div[1]/div[1]/div[2]/div";
+        public readonly string usernameLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/div[1]/input";
+        public readonly string passwordLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/div[2]/input";
+        public readonly string loginButtonLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/input";
+        public readonly string errorCardLocator = "/html/body/div/div/div[2]/div[1]/div/div/form/div[3]/h3";
+        public readonly string dashboardNameLocator = "/html/body/div/div/div/div[1]/div[1]/div[2]/div";
                  
         WebDriverWait wait;
         int SECONDS_TO_WAIT = 5;
