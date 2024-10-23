@@ -1,0 +1,43 @@
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\bin\Debug\net8.0\FinalTask.exe
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\bin\Debug\net8.0\FinalTask.deps.json
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\bin\Debug\net8.0\FinalTask.runtimeconfig.json
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\bin\Debug\net8.0\FinalTask.dll
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\bin\Debug\net8.0\FinalTask.pdb
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\obj\Debug\net8.0\FinalTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\obj\Debug\net8.0\FinalTask.AssemblyInfoInputs.cache
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\obj\Debug\net8.0\FinalTask.AssemblyInfo.cs
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\obj\Debug\net8.0\FinalTask.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\obj\Debug\net8.0\FinalTask.dll
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\obj\Debug\net8.0\refint\FinalTask.dll
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\obj\Debug\net8.0\FinalTask.pdb
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\obj\Debug\net8.0\FinalTask.genruntimeconfig.cache
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\obj\Debug\net8.0\ref\FinalTask.dll
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\bin\Debug\net8.0\WebDriver.Support.dll
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\bin\Debug\net8.0\WebDriver.dll
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\obj\Debug\net8.0\FinalTask.csproj.AssemblyReference.cache
+C:\Users\usuario\Documents\c#\practicas webdriver\final_task\FinalTask\FinalTask\obj\Debug\net8.0\FinalTask.csproj.Up2Date
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\bin\Debug\net8.0\FinalTask.exe
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\bin\Debug\net8.0\FinalTask.deps.json
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\bin\Debug\net8.0\FinalTask.runtimeconfig.json
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\bin\Debug\net8.0\FinalTask.dll
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\bin\Debug\net8.0\FinalTask.pdb
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\bin\Debug\net8.0\WebDriver.Support.dll
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\bin\Debug\net8.0\WebDriver.dll
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\obj\Debug\net8.0\FinalTask.csproj.AssemblyReference.cache
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\obj\Debug\net8.0\FinalTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\obj\Debug\net8.0\FinalTask.AssemblyInfoInputs.cache
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\obj\Debug\net8.0\FinalTask.AssemblyInfo.cs
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\obj\Debug\net8.0\FinalTask.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\obj\Debug\net8.0\FinalTask.sourcelink.json
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\obj\Debug\net8.0\FinalTask.csproj.Up2Date
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\obj\Debug\net8.0\FinalTask.dll
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\obj\Debug\net8.0\refint\FinalTask.dll
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\obj\Debug\net8.0\FinalTask.pdb
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\obj\Debug\net8.0\FinalTask.genruntimeconfig.cache
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTask\obj\Debug\net8.0\ref\FinalTask.dll

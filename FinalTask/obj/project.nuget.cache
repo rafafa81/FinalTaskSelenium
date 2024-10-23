@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "j4QaBd2la4A=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\usuario\\Documents\\c#\\FinalTask\\FinalTaskSelenium\\FinalTask\\FinalTask.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\usuario\\.nuget\\packages\\selenium.support\\4.25.0\\selenium.support.4.25.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\selenium.webdriver\\4.25.0\\selenium.webdriver.4.25.0.nupkg.sha512"
+  ],
+  "logs": []
+}
