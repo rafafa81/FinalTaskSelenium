@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using FinalTaskTests.Adapter;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
@@ -8,8 +9,9 @@ using System.Threading.Tasks;
 
 namespace FinalTaskTests.Page
 {
-    internal class MainPage : AbstractPage
+    public class MainPage : AbstractPage
     {
+        public LoginAdapter? loginAdapter;
         public readonly string dashboardNameLocator = "/html/body/div/div/div/div[1]/div[1]/div[2]/div";
         public string dashboardNameText = string.Empty;
         public WebDriverWait? wait;
@@ -30,6 +32,11 @@ namespace FinalTaskTests.Page
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(WAIT_TIMEOUT_SECONDS));
             dashboardNameText = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath(dashboardNameLocator))).Text;
             return dashboardNameText;
+        }
+
+        public MainPage Login()
+        {
+            return new LoginAdapter(driver).Login("standard_user", "secret_sauce").OpenPage();
         }
     }
 }

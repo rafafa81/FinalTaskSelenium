@@ -9,7 +9,7 @@ using Serilog;
 
 namespace FinalTaskTests.Page
 {
-    internal class LoginPage : AbstractPage
+    public class LoginPage : AbstractPage
     {
         private readonly string usernameLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/div[1]/input";
         private readonly string passwordLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/div[2]/input";

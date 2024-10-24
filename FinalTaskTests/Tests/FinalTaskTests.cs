@@ -73,6 +73,18 @@ namespace FinalTaskTests.Tests
             Assert.AreEqual("Swag Labs", dashboardNameText);
         }
 
+        [TestMethod("Adapter Test")]
+        public void TaskMainTest4()
+        {
+            string dashboardNameText = string.Empty;
+            if (driver is not null)
+            {
+                MainPage mainPage = new MainPage(driver);
+                mainPage.Login().OpenPage();
+                dashboardNameText = mainPage.GetTextDashboard();
+            }
 
+            Assert.AreEqual("Swag Labs", dashboardNameText);
+        }
     }
 }
