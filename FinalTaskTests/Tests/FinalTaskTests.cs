@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FinalTask;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,42 +14,12 @@ using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using FinalTaskTests.driver;
 
-namespace FinalTask.Tests
+namespace FinalTaskTests.Tests
 {
     [TestClass()]
-    public class FinalTaskTests
+    public class FinalTaskTests : CommonConditions
     {
-        public IWebDriver? driver;
-        private readonly string usernameLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/div[1]/input";
-        private readonly string passwordLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/div[2]/input";
-        private readonly string loginButtonLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/input";
-        private readonly string errorCardLocator = "/html/body/div/div/div[2]/div[1]/div/div/form/div[3]/h3";
-        private readonly string dashboardNameLocator = "/html/body/div/div/div/div[1]/div[1]/div[2]/div";
-                 
-        private WebDriverWait? wait;
-        private readonly int SECONDS_TO_WAIT = 5;
-        private IWebElement? inputUsername;
-        private IWebElement? inputPassword;
-        private IWebElement? loginButton;
-        private string? errorMessage;
 
-        [TestInitialize]
-        public void Init()
-        {
-            Log.Logger = new LoggerConfiguration()
-            .WriteTo.Console()
-            .MinimumLevel.Debug()
-            .CreateLogger();
-            string urlPagina = @"https://saucedemo.com";
-            driver = DriverSingleton.GetDriver();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
-            driver.Navigate().GoToUrl(urlPagina);
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(SECONDS_TO_WAIT));
-            inputUsername = driver.FindElement(By.XPath(usernameLocatorPath));
-            inputPassword = driver.FindElement(By.XPath(passwordLocatorPath));
-            loginButton = driver.FindElement(By.XPath(loginButtonLocatorPath));
-            errorMessage = string.Empty;
-        }
 
         [TestMethod("UC-1")]
         [DataRow("Random1", "Random1")]
@@ -77,7 +46,7 @@ namespace FinalTask.Tests
                 Log.Debug("Login button clicked");
                 errorMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(errorCardLocator))).Text;
             }
-           
+
             Assert.AreEqual("Epic sadface: Username is required", errorMessage);
         }
 
@@ -85,7 +54,7 @@ namespace FinalTask.Tests
         [DataRow("Random2", "Random2")]
         public void TaskMainTest2(string username, string password)
         {
-            
+
             Log.Debug("Initiating UC-2 test");
             if (inputUsername is not null && inputPassword is not null && loginButton is not null && wait is not null)
             {
@@ -103,7 +72,7 @@ namespace FinalTask.Tests
                 Log.Debug("Login button clicked");
                 errorMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(errorCardLocator))).Text;
             }
-            
+
             Assert.AreEqual("Epic sadface: Password is required", errorMessage);
         }
 
@@ -111,7 +80,7 @@ namespace FinalTask.Tests
         [DataRow("standard_user", "secret_sauce")]
         public void TaskMainTest3(string username, string password)
         {
-            
+
             Log.Information("Initiating UC-3 test");
             var dashboardNameText = string.Empty;
 
@@ -124,17 +93,10 @@ namespace FinalTask.Tests
                 Log.Debug("Login button clicked");
                 dashboardNameText = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath(dashboardNameLocator))).Text;
             }
-            
+
             Assert.AreEqual("Swag Labs", dashboardNameText);
         }
 
-        [TestCleanup]
-        public void Cleanup()
-        {
-            if (driver is not null)
-            {
-                DriverSingleton.closeDriver(); 
-            }
-        }
+
     }
 }
