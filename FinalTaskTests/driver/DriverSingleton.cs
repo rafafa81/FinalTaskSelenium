@@ -13,7 +13,6 @@ namespace FinalTaskTests.driver
 {
     internal class DriverSingleton
     {
-        private static readonly string RESOURCE_PATH = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
         private static WebDriver? driver;
 
         private DriverSingleton() { }

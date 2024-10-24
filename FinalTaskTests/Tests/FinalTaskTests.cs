@@ -24,8 +24,7 @@ namespace FinalTaskTests.Tests
 
 
         [TestMethod("UC-1")]
-        [DataRow("Random1", "Random1")]
-        public void TaskMainTest1(string username, string password)
+        public void TaskMainTest1()
         {
             string errorMessage = string.Empty;
             if (driver is not null)
@@ -41,10 +40,9 @@ namespace FinalTaskTests.Tests
         }
 
         [TestMethod("UC-2")]
-        [DataRow("Random2", "Random2")]
-        public void TaskMainTest2(string username, string password)
+        public void TaskMainTest2()
         {
-            User user = new User(Properties.Resources.testsUser, password);
+            User user = new User(Properties.Resources.testsUser, "Random2");
             string errorMessage = string.Empty;
             if (driver is not null && user.Username is not null)
             {
