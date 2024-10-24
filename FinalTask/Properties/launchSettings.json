@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FinalTask": {
+      "commandName": "Project",
+      "commandLineArgs": "argumento"
+    }
+  }
+}
