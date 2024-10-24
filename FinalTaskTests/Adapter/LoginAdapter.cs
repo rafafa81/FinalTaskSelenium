@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FinalTaskTests.Model;
 using FinalTaskTests.Page;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
@@ -17,9 +18,10 @@ namespace FinalTaskTests.Adapter
             loginPage = new LoginPage(driver);
         }
 
-        public MainPage Login(string username, string password)
+        public MainPage Login(User user)
         {
-            return loginPage.OpenPage().Login(username, password);
+
+            return loginPage.OpenPage().Login(user);
         }
     }
 }

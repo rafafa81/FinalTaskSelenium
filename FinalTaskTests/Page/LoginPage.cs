@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Serilog;
+using FinalTaskTests.Model;
 
 namespace FinalTaskTests.Page
 {
@@ -44,10 +45,11 @@ namespace FinalTaskTests.Page
             Log.Debug("Initiating UC-1 test");
             if (inputUsername is not null && inputPassword is not null && loginButton is not null && wait is not null)
             {
+                User tempUser = new User("Random","Random");
                 inputUsername.Clear();
                 inputPassword.Clear();
-                inputUsername.SendKeys("Random");
-                inputPassword.SendKeys("Random");
+                inputUsername.SendKeys(tempUser.Username);
+                inputPassword.SendKeys(tempUser.Password);
                 Log.Debug("User and password filled");
                 inputUsername.Clear();
                 inputPassword.Clear();
@@ -70,10 +72,11 @@ namespace FinalTaskTests.Page
             Log.Debug("Initiating UC-2 test");
             if (inputUsername is not null && inputPassword is not null && loginButton is not null && wait is not null)
             {
+                User tempUser = new User(username, "Random");
                 inputUsername.Clear();
                 inputPassword.Clear();
-                inputUsername.SendKeys("Random");
-                inputPassword.SendKeys("Random");
+                inputUsername.SendKeys(tempUser.Username);
+                inputPassword.SendKeys(tempUser.Password);
                 Log.Debug("User and password filled");
                 inputPassword.Clear();
                 inputPassword.Clear();
@@ -87,13 +90,13 @@ namespace FinalTaskTests.Page
             return this;
         }
 
-        public MainPage Login(string username, string password)
+        public MainPage Login(User user)
         {
             Log.Information("Initiating UC-3 test");
             if (inputUsername is not null && inputPassword is not null && loginButton is not null && wait is not null)
             {
-                inputUsername.SendKeys(username);
-                inputPassword.SendKeys(password);
+                inputUsername.SendKeys(user.Username);
+                inputPassword.SendKeys(user.Password);
                 Log.Debug("User and password filled");
                 loginButton.Click();
                 Log.Debug("Login button clicked");

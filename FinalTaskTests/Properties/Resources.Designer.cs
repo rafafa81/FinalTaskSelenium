@@ -68,5 +68,41 @@ namespace FinalTaskTests.Properties {
                 return ResourceManager.GetString("browser", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to secret_sauce.
+        /// </summary>
+        internal static string passwordAdapter {
+            get {
+                return ResourceManager.GetString("passwordAdapter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to secret_sauce.
+        /// </summary>
+        internal static string testsPassword {
+            get {
+                return ResourceManager.GetString("testsPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to standard_user.
+        /// </summary>
+        internal static string testsUser {
+            get {
+                return ResourceManager.GetString("testsUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to standard_user.
+        /// </summary>
+        internal static string userAdapter {
+            get {
+                return ResourceManager.GetString("userAdapter", resourceCulture);
+            }
+        }
     }
 }

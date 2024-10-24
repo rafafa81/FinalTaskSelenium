@@ -14,6 +14,7 @@ using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using FinalTaskTests.driver;
 using FinalTaskTests.Page;
+using FinalTaskTests.Model;
 
 namespace FinalTaskTests.Tests
 {
@@ -43,12 +44,13 @@ namespace FinalTaskTests.Tests
         [DataRow("Random2", "Random2")]
         public void TaskMainTest2(string username, string password)
         {
+            User user = new User(Properties.Resources.testsUser, password);
             string errorMessage = string.Empty;
-            if (driver is not null)
+            if (driver is not null && user.Username is not null)
             {
                 errorMessage = new LoginPage(driver)
                 .OpenPage()
-                .Login(username)
+                .Login(user.Username)
                 .GetErrorMessage();
                 Log.Debug(errorMessage);
             }
@@ -57,15 +59,15 @@ namespace FinalTaskTests.Tests
         }
 
         [TestMethod("UC-3")]
-        [DataRow("standard_user", "secret_sauce")]
-        public void TaskMainTest3(string username, string password)
+        public void TaskMainTest3()
         {
+            User user = new User(Properties.Resources.testsUser, Properties.Resources.testsPassword);
             string dashboardNameText = string.Empty;
             if (driver is not null)
             {
                 dashboardNameText = new LoginPage(driver)
                 .OpenPage()
-                .Login(username, password)
+                .Login(user)
                 .GetTextDashboard();
                 Log.Debug(dashboardNameText);
             }

@@ -120,4 +120,16 @@
   <data name="browser" xml:space="preserve">
     <value>otro</value>
   </data>
+  <data name="passwordAdapter" xml:space="preserve">
+    <value>secret_sauce</value>
+  </data>
+  <data name="testsPassword" xml:space="preserve">
+    <value>secret_sauce</value>
+  </data>
+  <data name="testsUser" xml:space="preserve">
+    <value>standard_user</value>
+  </data>
+  <data name="userAdapter" xml:space="preserve">
+    <value>standard_user</value>
+  </data>
 </root>

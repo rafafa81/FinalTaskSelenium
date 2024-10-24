@@ -1,4 +1,5 @@
 ﻿using FinalTaskTests.Adapter;
+using FinalTaskTests.Model;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
@@ -36,7 +37,8 @@ namespace FinalTaskTests.Page
 
         public MainPage Login()
         {
-            return new LoginAdapter(driver).Login("standard_user", "secret_sauce").OpenPage();
+            User user = new User(Properties.Resources.userAdapter, Properties.Resources.passwordAdapter);
+            return new LoginAdapter(driver).Login(user).OpenPage();
         }
     }
 }
