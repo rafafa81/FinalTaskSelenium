@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebDriverManager.DriverConfigs.Impl;
 
 namespace FinalTaskTests.driver
 {
@@ -24,13 +25,16 @@ namespace FinalTaskTests.driver
                 switch (Properties.Resources.browser)
                 {
                     case "firefox":
+                        new WebDriverManager.DriverManager().SetUpDriver(new FirefoxConfig());
                         driver = new FirefoxDriver();
                         break;
                     case "edge":
-                        driver = new EdgeDriver(RESOURCE_PATH + @"\drivers\");
+                        new WebDriverManager.DriverManager().SetUpDriver(new EdgeConfig());
+                        driver = new EdgeDriver();
                         break;
                     default:
-                        driver = new ChromeDriver(RESOURCE_PATH + @"\drivers\");
+                        new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
+                        driver = new ChromeDriver();
                         break;
                 }
             }
