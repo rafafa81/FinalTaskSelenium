@@ -13,19 +13,7 @@ namespace FinalTaskTests.Tests
     
     public class CommonConditions
     {
-        public IWebDriver? driver;
-        private readonly string usernameLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/div[1]/input";
-        private readonly string passwordLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/div[2]/input";
-        private readonly string loginButtonLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/input";
-        public readonly string errorCardLocator = "/html/body/div/div/div[2]/div[1]/div/div/form/div[3]/h3";
-        public readonly string dashboardNameLocator = "/html/body/div/div/div/div[1]/div[1]/div[2]/div";
-
-        public WebDriverWait? wait;
-        public readonly int SECONDS_TO_WAIT = 5;
-        public IWebElement? inputUsername;
-        public IWebElement? inputPassword;
-        public IWebElement? loginButton;
-        public string? errorMessage;
+        public WebDriver? driver;
 
         [TestInitialize]
         public void Init()
@@ -34,15 +22,8 @@ namespace FinalTaskTests.Tests
             .WriteTo.Console()
             .MinimumLevel.Debug()
             .CreateLogger();
-            string urlPagina = @"https://saucedemo.com";
             driver = DriverSingleton.GetDriver();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
-            driver.Navigate().GoToUrl(urlPagina);
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(SECONDS_TO_WAIT));
-            inputUsername = driver.FindElement(By.XPath(usernameLocatorPath));
-            inputPassword = driver.FindElement(By.XPath(passwordLocatorPath));
-            loginButton = driver.FindElement(By.XPath(loginButtonLocatorPath));
-            errorMessage = string.Empty;
         }
 
         [TestCleanup]

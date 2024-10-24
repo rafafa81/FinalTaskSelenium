@@ -13,6 +13,7 @@ using Serilog;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using FinalTaskTests.driver;
+using FinalTaskTests.Page;
 
 namespace FinalTaskTests.Tests
 {
@@ -25,26 +26,14 @@ namespace FinalTaskTests.Tests
         [DataRow("Random1", "Random1")]
         public void TaskMainTest1(string username, string password)
         {
-
-            Log.Debug("Initiating UC-1 test");
-            if (inputUsername is not null && inputPassword is not null && loginButton is not null && wait is not null)
+            string errorMessage = string.Empty;
+            if (driver is not null)
             {
-                inputUsername.Clear();
-                inputPassword.Clear();
-                inputUsername.SendKeys("Random");
-                inputPassword.SendKeys("Random");
-                Log.Debug("User and password filled");
-                inputUsername.Clear();
-                inputPassword.Clear();
-                inputUsername.SendKeys(" ");
-                inputPassword.Clear();
-                inputPassword.SendKeys(" ");
-                inputUsername.SendKeys(Keys.Backspace);
-                inputPassword.SendKeys(Keys.Backspace);
-                Log.Debug("User and password deleted");
-                loginButton.Click();
-                Log.Debug("Login button clicked");
-                errorMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(errorCardLocator))).Text;
+                errorMessage = new LoginPage(driver)
+                    .OpenPage()
+                    .Login()
+                    .GetErrorMessage();
+                Log.Debug(errorMessage);
             }
 
             Assert.AreEqual("Epic sadface: Username is required", errorMessage);
@@ -54,23 +43,14 @@ namespace FinalTaskTests.Tests
         [DataRow("Random2", "Random2")]
         public void TaskMainTest2(string username, string password)
         {
-
-            Log.Debug("Initiating UC-2 test");
-            if (inputUsername is not null && inputPassword is not null && loginButton is not null && wait is not null)
+            string errorMessage = string.Empty;
+            if (driver is not null)
             {
-                inputUsername.Clear();
-                inputPassword.Clear();
-                inputUsername.SendKeys("Random");
-                inputPassword.SendKeys("Random");
-                Log.Debug("User and password filled");
-                inputPassword.Clear();
-                inputPassword.Clear();
-                inputPassword.SendKeys(" ");
-                inputPassword.SendKeys(Keys.Backspace);
-                Log.Debug("Password deleted");
-                loginButton.Click();
-                Log.Debug("Login button clicked");
-                errorMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(errorCardLocator))).Text;
+                errorMessage = new LoginPage(driver)
+                .OpenPage()
+                .Login(username)
+                .GetErrorMessage();
+                Log.Debug(errorMessage);
             }
 
             Assert.AreEqual("Epic sadface: Password is required", errorMessage);
@@ -80,18 +60,14 @@ namespace FinalTaskTests.Tests
         [DataRow("standard_user", "secret_sauce")]
         public void TaskMainTest3(string username, string password)
         {
-
-            Log.Information("Initiating UC-3 test");
-            var dashboardNameText = string.Empty;
-
-            if (inputUsername is not null && inputPassword is not null && loginButton is not null && wait is not null)
+            string dashboardNameText = string.Empty;
+            if (driver is not null)
             {
-                inputUsername.SendKeys(username);
-                inputPassword.SendKeys(password);
-                Log.Debug("User and password filled");
-                loginButton.Click();
-                Log.Debug("Login button clicked");
-                dashboardNameText = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath(dashboardNameLocator))).Text;
+                dashboardNameText = new LoginPage(driver)
+                .OpenPage()
+                .Login(username, password)
+                .GetTextDashboard();
+                Log.Debug(dashboardNameText);
             }
 
             Assert.AreEqual("Swag Labs", dashboardNameText);
