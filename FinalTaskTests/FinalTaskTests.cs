@@ -11,6 +11,8 @@ using OpenQA.Selenium.Interactions.Internal;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using Serilog;
+using OpenQA.Selenium.Edge;
+using OpenQA.Selenium.Firefox;
 
 namespace FinalTask.Tests
 {
@@ -28,7 +30,7 @@ namespace FinalTask.Tests
         int SECONDS_TO_WAIT = 5;
         
 
-        [TestMethod()]
+        [TestMethod("UC-1")]
         [DataRow("Random1", "Random1")]
         public void TaskMainTest1(string username, string password)
         {
@@ -38,7 +40,9 @@ namespace FinalTask.Tests
             Log.Information("Hello, world!");
             string urlPagina = @"https://saucedemo.com";
             string path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
-            driver = new ChromeDriver(path + @"\drivers\");
+            //driver = new ChromeDriver(path + @"\drivers\");
+            //driver = new EdgeDriver(path + @"\drivers\");
+            driver = new FirefoxDriver();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
             driver.Navigate().GoToUrl(urlPagina);
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(SECONDS_TO_WAIT));
@@ -56,7 +60,7 @@ namespace FinalTask.Tests
             inputPassword.SendKeys(" ");
             inputUsername.SendKeys(Keys.Backspace);
             inputPassword.SendKeys(Keys.Backspace);
-            Log.Information(inputUsername.Text);
+            Log.Information("");
             Log.Information(inputPassword.Text);
             var loginButton = driver.FindElement(By.XPath(loginButtonLocatorPath));
             Thread.Sleep(2000);
@@ -67,7 +71,7 @@ namespace FinalTask.Tests
             Assert.AreEqual("Epic sadface: Username is required", errorMessage);
         }
 
-        [TestMethod()]
+        [TestMethod("UC-2")]
         [DataRow("Random2", "Random2")]
         public void TaskMainTest2(string username, string password)
         {
@@ -77,7 +81,9 @@ namespace FinalTask.Tests
             Log.Information("Hello, world!");
             string urlPagina = @"https://saucedemo.com";
             string path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
-            driver = new ChromeDriver(path + @"\drivers\");
+            //driver = new ChromeDriver(path + @"\drivers\");
+            //driver = new EdgeDriver(path + @"\drivers\");
+            driver = new FirefoxDriver();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
             driver.Navigate().GoToUrl(urlPagina);
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(SECONDS_TO_WAIT));
@@ -103,13 +109,15 @@ namespace FinalTask.Tests
             Assert.AreEqual("Epic sadface: Password is required", errorMessage);
         }
 
-        [TestMethod()]
+        [TestMethod("UC-3")]
         [DataRow("standard_user", "secret_sauce")]
         public void TaskMainTest3(string username, string password)
         {
             string urlPagina = @"https://saucedemo.com";
             string path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
-            driver = new ChromeDriver(path + @"\drivers\");
+            //driver = new ChromeDriver(path + @"\drivers\");
+            //driver = new EdgeDriver(path + @"\drivers\");
+            driver = new FirefoxDriver();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
             driver.Navigate().GoToUrl(urlPagina);
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(SECONDS_TO_WAIT));

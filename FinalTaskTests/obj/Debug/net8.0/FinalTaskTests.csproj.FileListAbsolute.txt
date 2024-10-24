@@ -249,3 +249,5 @@ C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTaskTests\obj\Deb
 C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTaskTests\obj\Debug\net8.0\FinalTaskTests.pdb
 C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTaskTests\obj\Debug\net8.0\FinalTaskTests.genruntimeconfig.cache
 C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTaskTests\obj\Debug\net8.0\ref\FinalTaskTests.dll
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTaskTests\obj\Debug\net8.0\FinalTaskTests.Properties.Resources.resources
+C:\Users\usuario\Documents\c#\FinalTask\FinalTaskSelenium\FinalTaskTests\obj\Debug\net8.0\FinalTaskTests.csproj.GenerateResource.cache
