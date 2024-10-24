@@ -13,6 +13,7 @@ using OpenQA.Selenium.Support.UI;
 using Serilog;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
+using FinalTaskTests.driver;
 
 namespace FinalTask.Tests
 {
@@ -41,10 +42,7 @@ namespace FinalTask.Tests
             .MinimumLevel.Debug()
             .CreateLogger();
             string urlPagina = @"https://saucedemo.com";
-            string path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
-            //driver = new ChromeDriver(path + @"\drivers\");
-            //driver = new EdgeDriver(path + @"\drivers\");
-            driver = new FirefoxDriver();
+            driver = DriverSingleton.GetDriver();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
             driver.Navigate().GoToUrl(urlPagina);
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(SECONDS_TO_WAIT));
@@ -135,7 +133,7 @@ namespace FinalTask.Tests
         {
             if (driver is not null)
             {
-                driver.Close(); 
+                DriverSingleton.closeDriver(); 
             }
         }
     }

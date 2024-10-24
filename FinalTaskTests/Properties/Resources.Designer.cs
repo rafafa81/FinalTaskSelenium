@@ -61,7 +61,7 @@ namespace FinalTaskTests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to edge.
+        ///   Looks up a localized string similar to otro.
         /// </summary>
         internal static string browser {
             get {
