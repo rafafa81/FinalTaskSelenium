@@ -12,10 +12,10 @@ namespace FinalTaskTests.Page
 {
     public class LoginPage : AbstractPage
     {
-        private readonly string usernameLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/div[1]/input";
-        private readonly string passwordLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/div[2]/input";
-        private readonly string loginButtonLocatorPath = "/html/body/div/div/div[2]/div[1]/div/div/form/input";
-        public readonly string errorCardLocator = "/html/body/div/div/div[2]/div[1]/div/div/form/div[3]/h3";
+        private readonly string usernameLocatorPath = "#user-name";
+        private readonly string passwordLocatorPath = "#password";
+        private readonly string loginButtonLocatorPath = "#login-button";
+        public readonly string errorCardLocator = "h3[data-test='error']";
         public WebDriverWait? wait;
         public readonly int SECONDS_TO_WAIT = 5;
         public IWebElement? inputUsername;
@@ -33,9 +33,9 @@ namespace FinalTaskTests.Page
             string urlPagina = @"https://saucedemo.com";
             driver.Navigate().GoToUrl(urlPagina);
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(SECONDS_TO_WAIT));
-            inputUsername = driver.FindElement(By.XPath(usernameLocatorPath));
-            inputPassword = driver.FindElement(By.XPath(passwordLocatorPath));
-            loginButton = driver.FindElement(By.XPath(loginButtonLocatorPath));
+            inputUsername = driver.FindElement(By.CssSelector(usernameLocatorPath));
+            inputPassword = driver.FindElement(By.CssSelector(passwordLocatorPath));
+            loginButton = driver.FindElement(By.CssSelector(loginButtonLocatorPath));
             errorMessage = string.Empty;
             return this;
         }
@@ -61,7 +61,7 @@ namespace FinalTaskTests.Page
                 Log.Debug("User and password deleted");
                 loginButton.Click();
                 Log.Debug("Login button clicked");
-                errorMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(errorCardLocator))).Text;
+                errorMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.CssSelector(errorCardLocator))).Text;
                 
             }
             return this;
@@ -85,7 +85,7 @@ namespace FinalTaskTests.Page
                 Log.Debug("Password deleted");
                 loginButton.Click();
                 Log.Debug("Login button clicked");
-                errorMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(errorCardLocator))).Text;
+                errorMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.CssSelector(errorCardLocator))).Text;
             }
             return this;
         }

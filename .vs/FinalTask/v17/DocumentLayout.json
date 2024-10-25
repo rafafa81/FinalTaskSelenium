@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{B73FAFDC-6475-42E0-ACA8-0A79422DA36A}|FinalTaskTests\\FinalTaskTests.csproj|solutionrelative:finaltasktests\\properties\\assemblyinfo1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B73FAFDC-6475-42E0-ACA8-0A79422DA36A}|FinalTaskTests\\FinalTaskTests.csproj|c:\\users\\usuario\\documents\\c#\\finaltask\\finaltaskselenium\\finaltasktests\\tests\\finaltasktests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B73FAFDC-6475-42E0-ACA8-0A79422DA36A}|FinalTaskTests\\FinalTaskTests.csproj|solutionrelative:finaltasktests\\tests\\finaltasktests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B73FAFDC-6475-42E0-ACA8-0A79422DA36A}|FinalTaskTests\\FinalTaskTests.csproj|c:\\users\\usuario\\documents\\c#\\finaltask\\finaltaskselenium\\finaltasktests\\page\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73FAFDC-6475-42E0-ACA8-0A79422DA36A}|FinalTaskTests\\FinalTaskTests.csproj|solutionrelative:finaltasktests\\page\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B73FAFDC-6475-42E0-ACA8-0A79422DA36A}|FinalTaskTests\\FinalTaskTests.csproj|c:\\users\\usuario\\documents\\c#\\finaltask\\finaltaskselenium\\finaltasktests\\finaltasktests.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{B73FAFDC-6475-42E0-ACA8-0A79422DA36A}|FinalTaskTests\\FinalTaskTests.csproj|solutionrelative:finaltasktests\\finaltasktests.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B73FAFDC-6475-42E0-ACA8-0A79422DA36A}|FinalTaskTests\\FinalTaskTests.csproj|c:\\users\\usuario\\documents\\c#\\finaltask\\finaltaskselenium\\finaltasktests\\driver\\driversingleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B73FAFDC-6475-42E0-ACA8-0A79422DA36A}|FinalTaskTests\\FinalTaskTests.csproj|solutionrelative:finaltasktests\\driver\\driversingleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B73FAFDC-6475-42E0-ACA8-0A79422DA36A}|FinalTaskTests\\FinalTaskTests.csproj|c:\\users\\usuario\\documents\\c#\\finaltask\\finaltaskselenium\\finaltasktests\\page\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73FAFDC-6475-42E0-ACA8-0A79422DA36A}|FinalTaskTests\\FinalTaskTests.csproj|solutionrelative:finaltasktests\\page\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,19 +22,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\c#\\FinalTask\\FinalTaskSelenium\\FinalTaskTests\\Page\\MainPage.cs",
+              "RelativeDocumentMoniker": "FinalTaskTests\\Page\\MainPage.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\c#\\FinalTask\\FinalTaskSelenium\\FinalTaskTests\\Page\\MainPage.cs",
+              "RelativeToolTip": "FinalTaskTests\\Page\\MainPage.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T23:54:37.863Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -48,47 +45,31 @@
               "RelativeDocumentMoniker": "FinalTaskTests\\Properties\\AssemblyInfo1.cs",
               "ToolTip": "C:\\Users\\usuario\\Documents\\c#\\FinalTask\\FinalTaskSelenium\\FinalTaskTests\\Properties\\AssemblyInfo1.cs",
               "RelativeToolTip": "FinalTaskTests\\Properties\\AssemblyInfo1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T20:35:48.26Z",
+              "WhenOpened": "2024-10-24T23:41:36.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FinalTaskTests",
-              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\c#\\FinalTask\\FinalTaskSelenium\\FinalTaskTests\\FinalTaskTests.csproj",
-              "RelativeDocumentMoniker": "FinalTaskTests\\FinalTaskTests.csproj",
-              "ToolTip": "C:\\Users\\usuario\\Documents\\c#\\FinalTask\\FinalTaskSelenium\\FinalTaskTests\\FinalTaskTests.csproj",
-              "RelativeToolTip": "FinalTaskTests\\FinalTaskTests.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-24T20:34:27.858Z",
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\c#\\FinalTask\\FinalTaskSelenium\\FinalTaskTests\\Page\\LoginPage.cs",
+              "RelativeDocumentMoniker": "FinalTaskTests\\Page\\LoginPage.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\c#\\FinalTask\\FinalTaskSelenium\\FinalTaskTests\\Page\\LoginPage.cs",
+              "RelativeToolTip": "FinalTaskTests\\Page\\LoginPage.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAFcAAAB3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T23:34:20.105Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FinalTaskTests.cs",
-              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\c#\\FinalTask\\FinalTaskSelenium\\FinalTaskTests\\Tests\\FinalTaskTests.cs",
-              "RelativeDocumentMoniker": "FinalTaskTests\\Tests\\FinalTaskTests.cs",
-              "ToolTip": "C:\\Users\\usuario\\Documents\\c#\\FinalTask\\FinalTaskSelenium\\FinalTaskTests\\Tests\\FinalTaskTests.cs",
-              "RelativeToolTip": "FinalTaskTests\\Tests\\FinalTaskTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T20:02:44.436Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DriverSingleton.cs",
-              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\c#\\FinalTask\\FinalTaskSelenium\\FinalTaskTests\\driver\\DriverSingleton.cs",
-              "RelativeDocumentMoniker": "FinalTaskTests\\driver\\DriverSingleton.cs",
-              "ToolTip": "C:\\Users\\usuario\\Documents\\c#\\FinalTask\\FinalTaskSelenium\\FinalTaskTests\\driver\\DriverSingleton.cs",
-              "RelativeToolTip": "FinalTaskTests\\driver\\DriverSingleton.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T19:07:14.606Z"
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }
