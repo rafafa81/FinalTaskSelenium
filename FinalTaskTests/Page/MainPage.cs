@@ -13,7 +13,7 @@ namespace FinalTaskTests.Page
     public class MainPage : AbstractPage
     {
         public LoginAdapter? loginAdapter;
-        public readonly string dashboardNameLocator = "/html/body/div/div/div/div[1]/div[1]/div[2]/div";
+        public readonly string dashboardNameLocator = ".app_logo";
         public string dashboardNameText = string.Empty;
         public WebDriverWait? wait;
         public readonly int SECONDS_TO_WAIT = 5;
@@ -31,7 +31,7 @@ namespace FinalTaskTests.Page
         public string GetTextDashboard()
         {
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(WAIT_TIMEOUT_SECONDS));
-            dashboardNameText = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath(dashboardNameLocator))).Text;
+            dashboardNameText = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.CssSelector(dashboardNameLocator))).Text;
             return dashboardNameText;
         }
 

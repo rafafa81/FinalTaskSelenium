@@ -15,4 +15,4 @@ using System.Runtime.InteropServices;
 // The following GUID is for the ID of the typelib if this project is exposed to COM.
 
 [assembly: Guid("bccaa372-e067-4648-989b-ef2280e73daa")]
-[assembly: Parallelize(Workers = 4, Scope = ExecutionScope.MethodLevel)]
+//[assembly: Parallelize(Workers = 4, Scope = ExecutionScope.MethodLevel)]
